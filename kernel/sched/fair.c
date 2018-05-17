@@ -7777,7 +7777,6 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
 			    !_wake_cap && about_to_idle)
 				return cpu;
 		}
-	
 		record_wakee(p);
 		want_affine = (!wake_wide(p) && !_wake_cap &&
 			cpumask_test_cpu(cpu, tsk_cpus_allowed(p)));
