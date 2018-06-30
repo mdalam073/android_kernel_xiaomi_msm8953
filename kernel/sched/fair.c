@@ -3784,8 +3784,8 @@ static __always_inline void return_cfs_rq_runtime(struct cfs_rq *cfs_rq);
 static void
 dequeue_entity(struct cfs_rq *cfs_rq, struct sched_entity *se, int flags)
 {
-	int update_flags;
 
+	int update_flags;
 	/*
 	 * Update run-time statistics of the 'current'.
 	 */
