@@ -48,5 +48,10 @@ MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
 MODULE_DESCRIPTION("CPUfreq policy governor 'performance'");
 MODULE_LICENSE("GPL");
 
+<<<<<<< HEAD
 cpufreq_governor_init(cpufreq_gov_performance);
 cpufreq_governor_exit(cpufreq_gov_performance);
+=======
+core_initcall(cpufreq_gov_performance_init);
+module_exit(cpufreq_gov_performance_exit);
+>>>>>>> 52ddcfdfd023 (drivers: cpufreq: Initialize governors earlier)
