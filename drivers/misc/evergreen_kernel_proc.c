@@ -1,3 +1,10 @@
+/*
+* Initial proc for evergreen kernel
+* by Romi Yusnandar
+* Create some file ini /proc/evergreen-kernel
+*/
+
+#include <linux/module.h>
 #include <linux/proc_fs.h>
 #include <linux/uaccess.h>
 #include <linux/seq_file.h>
