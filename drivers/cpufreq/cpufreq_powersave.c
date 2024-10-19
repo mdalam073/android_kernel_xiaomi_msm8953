@@ -40,13 +40,6 @@ struct cpufreq_governor *cpufreq_default_governor(void)
 {
 	return &cpufreq_gov_powersave;
 }
-<<<<<<< HEAD
-=======
-
-core_initcall(cpufreq_gov_powersave_init);
-#else
-module_init(cpufreq_gov_powersave_init);
->>>>>>> 52ddcfdfd023 (drivers: cpufreq: Initialize governors earlier)
 #endif
 
 cpufreq_governor_init(cpufreq_gov_powersave);

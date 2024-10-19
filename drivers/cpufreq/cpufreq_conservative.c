@@ -329,13 +329,6 @@ struct cpufreq_governor *cpufreq_default_governor(void)
 {
 	return &CPU_FREQ_GOV_CONSERVATIVE;
 }
-<<<<<<< HEAD
-=======
-
-core_initcall(cpufreq_gov_dbs_init);
-#else
-module_init(cpufreq_gov_dbs_init);
->>>>>>> 52ddcfdfd023 (drivers: cpufreq: Initialize governors earlier)
 #endif
 
 cpufreq_governor_init(CPU_FREQ_GOV_CONSERVATIVE);
